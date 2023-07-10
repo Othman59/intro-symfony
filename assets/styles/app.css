@@ -1,0 +1,5 @@
+@import url('~bootstrap/scss/bootstrap');
+
+body {
+    background-color: lightgray;
+}

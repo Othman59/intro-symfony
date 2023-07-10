@@ -3,3 +3,8 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+    
+lucky_number:
+    path: /lucky/number/{min}/{max}
+    controller: App\Controller\LuckyController::number
+    condition: "params['min'] < params['max']"

@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+'{% block body %}
+<table class= "table">
+    <tr>
+        <th>ID</td>
+        <th>Nom de l'entreprise</th>
+    </tr>
+    {% for entreprise in entreprise %}
+        <tr>
+            <th>{{ entreprise.id }}</th>
+            <th>{{ entreprise.name }}</th>
+        </tr>
+    {% else %}
+        <div>Aucune entreprise trouvée</div>
+    {% endfor %}
+</table>
+{% endblock %}
